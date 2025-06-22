@@ -1,12 +1,11 @@
-import React from 'react'
+
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import About from '../components/About'
 import Programs from '../components/Programs'
 
-type Props = {}
 
-const Home = (props: Props) => {
+const Home = () => {
   return (
     <main>
       <Navbar/>

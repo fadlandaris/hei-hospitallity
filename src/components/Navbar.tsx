@@ -1,4 +1,3 @@
-import React from 'react'
 import { FramerLogo} from 'phosphor-react'
 import { navLinks } from '../data/data'
 import { Link } from 'react-router-dom'
