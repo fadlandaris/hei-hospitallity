@@ -1,11 +1,10 @@
-import React, { useState } from 'react'
+
 import { ArrowRight, Star, ArrowUpRight, FramerLogo, Student, Trophy } from 'phosphor-react'
 import { HERO } from '../assets/assets'
 import { sideLinks } from '../data/data'
 
-type Props = {}
 
-const Hero = (props: Props) => {
+const Hero = () => {
   // const [Default, setDefault] = useState("Home")
 
   return (

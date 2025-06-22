@@ -1,10 +1,9 @@
-import React from 'react'
+
 import { Routes, Route } from 'react-router-dom'
 import Home from './page/Home'
 
-type Props = {}
 
-const App = (props: Props) => {
+const App = () => {
   return (
     <main>
       <Routes>

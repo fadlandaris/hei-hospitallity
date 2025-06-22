@@ -1,10 +1,8 @@
-import React from 'react'
 import { ABOUT } from '../assets/assets'
 import { aboutData } from '../data/data'
 
-type Props = {}
 
-const About = (props: Props) => {
+const About = () => {
   return (
     <main className='px-16'>
       <div className='border border-neutral-100 shadow-sm rounded-xl grid grid-cols-3 gap-x-16 h-96 overflow-hidden'>
