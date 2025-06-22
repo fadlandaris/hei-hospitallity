@@ -3,11 +3,9 @@ import { FramerLogo} from 'phosphor-react'
 import { navLinks } from '../data/data'
 import { Link } from 'react-router-dom'
 
-type Props = {}
-
-const Navbar = (props: Props) => {
+const Navbar = () => {
   return (
-   <nav className='py-4 px-16 fixed top-0 left-0 right-0 flex justify-between items-center '>
+   <nav className='py-4 px-16 fixed top-0 left-0 right-0 flex justify-between items-center z-50 bg-white'>
     <div className='w-64 flex items-center gap-x-2'>
       <div className='text-2xl text-primary'>
         <FramerLogo weight='fill'/>
@@ -24,7 +22,7 @@ const Navbar = (props: Props) => {
       })}
     </div>
     <div className='flex justify-end items-center w-64'>
-      <button className='border px-4 py-2 text-sm bg-primary text-white rounded-lg font-light'>
+      <button className=' px-4 py-2 text-sm bg-gradient-to-r from-primary/80 to-primary shadow-sm text-white rounded-xl'>
         Daftar
       </button>
     </div>

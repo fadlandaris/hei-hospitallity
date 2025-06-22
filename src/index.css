@@ -3,12 +3,12 @@
 
 
 @theme {
-  --color-primary: #f25b45;
+  --color-primary: #60aea2;
   --color-text: #787a8b;
   --font-inter: "Inter", sans-serif;
 }
 
 
 body {
-  @apply font-inter;
+  @apply font-inter pb-24;
 }

@@ -42,3 +42,47 @@ export const sideLinks: staticData[] = [
     icon: HouseSimple,
   },
 ]
+
+export const aboutData: staticData[] = [
+  {
+    id: 1,
+    title: "Lulusan",
+    value: "100",
+    subTitle: "+",
+  },
+  {
+    id: 2,
+    title: "Partners",
+    value: "10",
+    subTitle: "+",
+  },
+  {
+    id: 3,
+    title: "Pendirian",
+    value: "10",
+    subTitle: "Thn",
+  },
+]
+
+export const whyUsData: staticData[] = [
+  {
+    id: 1,
+    title: "Infrastruktur Tersertifikasi",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
+  },
+   {
+    id: 2,
+    title: "Kuliah Untung",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
+  },
+   {
+    id: 3,
+    title: "Penempatan Kerja",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
+  },
+   {
+    id: 4,
+    title: "Kuliah Cepat Kerja",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
+  },
+]
