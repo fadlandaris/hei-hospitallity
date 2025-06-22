@@ -6,14 +6,14 @@ import { sideLinks } from '../data/data'
 type Props = {}
 
 const Hero = (props: Props) => {
-  const [Default, setDefault] = useState("Home")
+  // const [Default, setDefault] = useState("Home")
 
   return (
-    <div className='pt-12  h-screen px-16'>
+    <div className='mt-8 h-screen px-16'>
       <div className='grid grid-cols-2 h-full'>
         <div className='flex flex-col justify-center '>
           <div className=''>
-          <div className='px-4 py-2 border inline-block text-sm rounded-full text-primary shadow font-medium '>
+          <div className='px-4 py-2 border inline-block rounded-full text-primary shadow font-medium '>
             <div className='flex items-center gap-x-2'>
               <div className='text-yellow-300'>
                 <Trophy weight='fill'/>
@@ -21,7 +21,7 @@ const Hero = (props: Props) => {
               #1 Hospitallity School at Subang
             </div>
           </div>
-          <h1 className='text-6xl mt-8 font-semibold leading-16'>Smarter Marketing <br /> bigger <span className='text-primary italic'>Impacts</span></h1>
+          <h1 className='text-6xl mt-8 font-medium leading-16'>Smarter Marketing <br /> bigger <span className='text-primary italic'>Impacts</span></h1>
           <p className='mt-8 text-text'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis <br /> doloremque aut ullam fuga vero, vel sint eos, reiciendis </p>
           <div className='flex items-center mt-8 gap-x-4'>
             <button className='px-8 py-4 rounded-xl font-semibold bg-gradient-to-r from-primary/80 to-primary text-white text-sm shadow-sm'>
@@ -34,7 +34,7 @@ const Hero = (props: Props) => {
               </div>
             </button>
           </div>
-          <div className='mt-8 flex items-center gap-x-4'>
+          <div className='mt-12 flex items-center gap-x-4'>
             <div className='flex items-center'>
               <div className='w-10 h-10 bg-neutral-300 rounded-full border-2 border-white'/>
               <div className='w-10 h-10 bg-neutral-300 rounded-full border-2 border-white -ml-2'/>
@@ -59,7 +59,7 @@ const Hero = (props: Props) => {
         </div>
         </div>
         <div className='grid grid-cols-4 gap-x-8 relative '>
-         <div className='absolute w-36 h-36 top-1/2 -translate-y-1/2 -left-16 blur-[200px] bg-primary  rounded-full z-10'>
+         <div className='absolute w-36 h-36 top-1/2 -translate-y-1/2 -left-16 blur-[150px] bg-primary  rounded-full z-10'>
          </div>
           <div className='flex flex-col justify-center'>
             <div className='p-4 border border-neutral-200 shadow-sm rounded-xl bg-white z-20'>

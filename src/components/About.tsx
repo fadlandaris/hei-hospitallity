@@ -6,11 +6,11 @@ type Props = {}
 
 const About = (props: Props) => {
   return (
-    <main className='px-16 '>
+    <main className='px-16'>
       <div className='border border-neutral-100 shadow-sm rounded-xl grid grid-cols-3 gap-x-16 h-96 overflow-hidden'>
         <div className='p-8 flex flex-col justify-between'>
           <div>
-            <h1 className='font-semibold text-4xl'>The AI <span className='text-primary italic'>Workforce</span> Human can learn on.</h1>
+            <h1 className='font-medium text-4xl'>The AI <span className='text-primary italic'>Workforce</span> Human can learn on.</h1>
             <p className='mt-4 text-text '>Never quit and always improve. Scale to meet any demand</p>
           </div>
           <div className='flex items-center gap-x-8'>

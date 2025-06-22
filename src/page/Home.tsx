@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import About from '../components/About'
-import Whyus from '../components/Whyus'
+import Programs from '../components/Programs'
 
 type Props = {}
 
@@ -12,7 +12,7 @@ const Home = (props: Props) => {
       <Navbar/>
       <Hero/>
       <About/>
-      <Whyus/>
+      <Programs/>
     </main>
   )
 }

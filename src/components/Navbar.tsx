@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-   <nav className='py-4 px-16 fixed top-0 left-0 right-0 flex justify-between items-center z-50 bg-white'>
+   <nav className='py-4 px-16 fixed top-0 left-0 right-0 flex justify-between items-center z-50 bg-white border-b border-neutral-100'>
     <div className='w-64 flex items-center gap-x-2'>
       <div className='text-2xl text-primary'>
         <FramerLogo weight='fill'/>

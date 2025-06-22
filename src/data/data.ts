@@ -1,5 +1,5 @@
 import type { staticData } from "../type/type"
-import { HouseSimple, DotsSix, Buildings } from "phosphor-react"
+import { HouseSimple, DotsSix, Buildings, Coffee, PaintBrushHousehold, Hamburger } from "phosphor-react"
 
 export const navLinks: staticData[] = [
   {
@@ -44,45 +44,85 @@ export const sideLinks: staticData[] = [
 ]
 
 export const aboutData: staticData[] = [
+   {
+    id: 3,
+    title: "Pendirian",
+    value: "10",
+    subTitle: "Thn",
+  },
   {
     id: 1,
     title: "Lulusan",
     value: "100",
     subTitle: "+",
   },
-  {
+   {
     id: 2,
     title: "Partners",
     value: "10",
     subTitle: "+",
   },
-  {
-    id: 3,
-    title: "Pendirian",
-    value: "10",
-    subTitle: "Thn",
-  },
 ]
 
-export const whyUsData: staticData[] = [
-  {
+export const programData: staticData[] = [
+   {
     id: 1,
-    title: "Infrastruktur Tersertifikasi",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
+    icon: Coffee,
+    title: "Class of Barista",
+    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, vitae ex. Ducimus nulla quod corporis ullam dolores natus sed perferendis voluptatum qui perspiciatis. Quidem, voluptates? ",
+    value: [
+      {
+        id: 1,
+        subTitle: "Lorem ipsum dolor sit amet consectetur",
+      },
+       {
+        id: 1,
+        subTitle: "Lorem ipsum dolor sit amet consectetur",
+      },
+       {
+        id: 1,
+        subTitle: "Lorem ipsum dolor sit amet consectetur",
+      },
+    ]
   },
    {
     id: 2,
-    title: "Kuliah Untung",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
+    icon: PaintBrushHousehold,
+    title: "Class of Housekeeping",
+    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, vitae ex. Ducimus nulla quod corporis ullam dolores natus sed perferendis voluptatum qui perspiciatis. Quidem, voluptates? ",
+     value: [
+      {
+        id: 1,
+        subTitle: "Lorem ipsum dolor sit amet consectetur",
+      },
+       {
+        id: 1,
+        subTitle: "Lorem ipsum dolor sit amet consectetur",
+      },
+       {
+        id: 1,
+        subTitle: "Lorem ipsum dolor sit amet consectetur",
+      },
+    ]
   },
    {
     id: 3,
-    title: "Penempatan Kerja",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
-  },
-   {
-    id: 4,
-    title: "Kuliah Cepat Kerja",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
+    icon: Hamburger,
+    title: "Food & Beverage Services",
+    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, vitae ex. Ducimus nulla quod corporis ullam dolores natus sed perferendis voluptatum qui perspiciatis. Quidem, voluptates? ",
+     value: [
+      {
+        id: 1,
+        subTitle: "Lorem ipsum dolor sit amet consectetur",
+      },
+       {
+        id: 1,
+        subTitle: "Lorem ipsum dolor sit amet consectetur",
+      },
+       {
+        id: 1,
+        subTitle: "Lorem ipsum dolor sit amet consectetur",
+      },
+    ]
   },
 ]

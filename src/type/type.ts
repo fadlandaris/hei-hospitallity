@@ -3,7 +3,7 @@ export interface staticData {
     nav?: string,
     link? : string
     icon?: any
-    value?: string
+    value?: any
     subTitle?: string
     title?: string
     desc? : string
