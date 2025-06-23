@@ -4,7 +4,7 @@ import { HERO } from "../assets/assets"
 
 const Hero = () => {
   return (
-    <main className="mt-44 px-16 ">
+    <main className="mt-36 px-16  ">
       <div className="h-screen relative grid grid-cols-2">
         <div className="absolute bg-gradient-to-b from-lightgray to-white w-[500px] h-72 rounded-4xl bottom-16 left-1/2 -translate-x-1/2 "/>
         <div className="absolute bg-gradient-to-b from-lightgray to-white w-[500px] h-64 rounded-4xl top-0 right-32 "/>

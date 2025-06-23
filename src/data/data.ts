@@ -1,5 +1,5 @@
 import type { staticData } from "../type/type"
-import { InstagramLogo, FacebookLogo, TiktokLogo, YoutubeLogo, GraduationCap, Handshake, Globe } from "phosphor-react"
+import { InstagramLogo, FacebookLogo, TiktokLogo, YoutubeLogo, GraduationCap, Handshake, Globe, Coffee, PaintBrushHousehold, Hamburger } from "phosphor-react"
 import { HERO } from "../assets/assets"
 
 export const navLinks: staticData[] = [
@@ -113,5 +113,29 @@ export const marqueeData: staticData[] = [
    {
     id: 5,
     img: HERO,
+  },
+]
+
+export const programData: staticData[] = [
+  {
+    id: 1,
+    title: "Class of Barista Service",
+    icon: Coffee,
+    video : "",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quasi eum tenetur iusto, ad qui similique sed? Error, iure quibusdam."
+  },
+   {
+    id: 2,
+    icon: PaintBrushHousehold,
+    title: "Class of House Keeping Service",
+    video : "",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quasi eum tenetur iusto, ad qui similique sed? Error, iure quibusdam."
+  },
+   {
+    id: 3,
+    icon: Hamburger,
+    title: " Class Food & Beverage Service",
+    video : "",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quasi eum tenetur iusto, ad qui similique sed? Error, iure quibusdam."
   },
 ]

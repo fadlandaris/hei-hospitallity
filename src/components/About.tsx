@@ -28,7 +28,7 @@ const About = () => {
             </div>
             <div className="absolute inset-0  bg-gradient-to-t from-lightblack via-lightblack/50 to-white/5 rounded-br-4xl rounded-bl-4xl"/>
             <img src={ABOUT} className="w-full h-full object-cover rounded-3xl object-bottom" />
-            <div className="absolute bottom-0 w-full p-12 ">
+            <div className="absolute bottom-0 w-full p-16 ">
               <div className="px-4 py-2 bg-white inline-block rounded-full text-text text-sm">
                 Why Choose Us ?
               </div>
@@ -36,7 +36,7 @@ const About = () => {
                 {whyUsData.map((item, i) => {
                   return (
                     <div key={i} className=" text-white">
-                      <h1 className="text-2xl font-medium tracking-wide">{item.title}</h1>
+                      <h1 className="text-3xl tracking-wide font-medium">{item.title}</h1>
                       <p className="mt-4">{item.desc}</p>
                     </div>
                   )
@@ -53,7 +53,7 @@ const About = () => {
                   </div>
                   <div className="flex items-start gap-x-2 text-7xl">
                     <h1>{item.value}</h1>
-                    <p className="text-2xl font-semibold">{item.subTitle}</p>
+                    <p className="text-3xl font-semibold">{item.subTitle}</p>
                   </div>
                   <p className="text-text">{item.title}</p>
                 </div>

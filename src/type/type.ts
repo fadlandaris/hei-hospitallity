@@ -8,4 +8,5 @@ export interface staticData {
     title?: string
     desc? : string
     img?: string
+    video?: string
 }
