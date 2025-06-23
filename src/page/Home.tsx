@@ -1,9 +1,7 @@
-
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import About from '../components/About'
-import Programs from '../components/Programs'
-
+// import Programs from '../components/Programs'
 
 const Home = () => {
   return (
@@ -11,7 +9,7 @@ const Home = () => {
       <Navbar/>
       <Hero/>
       <About/>
-      <Programs/>
+      {/* <Programs/> */}
     </main>
   )
 }

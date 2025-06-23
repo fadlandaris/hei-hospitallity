@@ -1,5 +1,5 @@
-import HERO from "./hero.jpg"
-import ABOUT from "./about.png"
+import HERO from "./hero.png"
+import ABOUT from "./about.jpeg"
 
 export {
     HERO,

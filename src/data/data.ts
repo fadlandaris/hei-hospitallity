@@ -1,5 +1,6 @@
 import type { staticData } from "../type/type"
-import { HouseSimple, DotsSix, Buildings, Coffee, PaintBrushHousehold, Hamburger } from "phosphor-react"
+import { InstagramLogo, FacebookLogo, TiktokLogo, YoutubeLogo, GraduationCap, Handshake, Globe } from "phosphor-react"
+import { HERO } from "../assets/assets"
 
 export const navLinks: staticData[] = [
   {
@@ -9,120 +10,108 @@ export const navLinks: staticData[] = [
   },
   {
     id: 1,
-    nav: "Home",
+    nav: "About",
     link: "/home",
   },
   {
     id: 1,
-    nav: "Home",
+    nav: "Services",
     link: "/home",
   },
   {
     id: 1,
-    nav: "Home",
+    nav: "Testimony",
     link: "/home",
   },
 ]
 
-export const sideLinks: staticData[] = [
+export const socialMediaData: staticData[] = [
   {
     id: 1,
-    icon: DotsSix,
+    icon: InstagramLogo,
   },
-   {
+  {
     id: 2,
-    icon: Buildings,
+    icon: FacebookLogo,
   },
-   {
+  {
     id: 3,
-    icon: HouseSimple,
+    icon: TiktokLogo,
   },
-   {
+  {
     id: 4,
-    icon: HouseSimple,
+    icon: YoutubeLogo,
   },
 ]
+
 
 export const aboutData: staticData[] = [
-   {
-    id: 3,
-    title: "Pendirian",
-    value: "10",
-    subTitle: "Thn",
-  },
+
   {
     id: 1,
-    title: "Lulusan",
+    icon: GraduationCap,
+    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, vel. Sit quia voluptatum ",
     value: "100",
     subTitle: "+",
   },
-   {
+  {
     id: 2,
-    title: "Partners",
+    icon: Handshake,
+    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, vel. Sit quia voluptatum ",
     value: "10",
     subTitle: "+",
   },
+   {
+    id: 3,
+    icon: Globe,
+    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, vel. Sit quia voluptatum ",
+    value: "10",
+    subTitle: "Thn",
+  },
 ]
 
-export const programData: staticData[] = [
-   {
+export const whyUsData: staticData[] = [
+  {
     id: 1,
-    icon: Coffee,
-    title: "Class of Barista",
-    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, vitae ex. Ducimus nulla quod corporis ullam dolores natus sed perferendis voluptatum qui perspiciatis. Quidem, voluptates? ",
-    value: [
-      {
-        id: 1,
-        subTitle: "Lorem ipsum dolor sit amet consectetur",
-      },
-       {
-        id: 1,
-        subTitle: "Lorem ipsum dolor sit amet consectetur",
-      },
-       {
-        id: 1,
-        subTitle: "Lorem ipsum dolor sit amet consectetur",
-      },
-    ]
+    title: "Infrastruktur Valid",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
   },
    {
     id: 2,
-    icon: PaintBrushHousehold,
-    title: "Class of Housekeeping",
-    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, vitae ex. Ducimus nulla quod corporis ullam dolores natus sed perferendis voluptatum qui perspiciatis. Quidem, voluptates? ",
-     value: [
-      {
-        id: 1,
-        subTitle: "Lorem ipsum dolor sit amet consectetur",
-      },
-       {
-        id: 1,
-        subTitle: "Lorem ipsum dolor sit amet consectetur",
-      },
-       {
-        id: 1,
-        subTitle: "Lorem ipsum dolor sit amet consectetur",
-      },
-    ]
+    title: "Kuliah Untung",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
   },
    {
     id: 3,
-    icon: Hamburger,
-    title: "Food & Beverage Services",
-    desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, vitae ex. Ducimus nulla quod corporis ullam dolores natus sed perferendis voluptatum qui perspiciatis. Quidem, voluptates? ",
-     value: [
-      {
-        id: 1,
-        subTitle: "Lorem ipsum dolor sit amet consectetur",
-      },
-       {
-        id: 1,
-        subTitle: "Lorem ipsum dolor sit amet consectetur",
-      },
-       {
-        id: 1,
-        subTitle: "Lorem ipsum dolor sit amet consectetur",
-      },
-    ]
+    title: "Penempatan Kerja",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
+  },
+   {
+    id: 4,
+    title: "Kuliah Cepat Kerja",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
+  },
+]
+
+export const marqueeData: staticData[] = [
+  {
+    id: 1,
+    img: HERO,
+  },
+   {
+    id: 2,
+    img: HERO,
+  },
+   {
+    id: 3,
+    img: HERO,
+  },
+   {
+    id: 4,
+    img: HERO,
+  },
+   {
+    id: 5,
+    img: HERO,
   },
 ]

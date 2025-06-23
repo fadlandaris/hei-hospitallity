@@ -1,31 +1,30 @@
-import { FramerLogo} from 'phosphor-react'
-import { navLinks } from '../data/data'
-import { Link } from 'react-router-dom'
+import { MediumLogo } from "phosphor-react"
+import { navLinks } from "../data/data"
 
 const Navbar = () => {
   return (
-   <nav className='py-4 px-16 fixed top-0 left-0 right-0 flex justify-between items-center z-50 bg-white border-b border-neutral-100'>
-    <div className='w-64 flex items-center gap-x-2'>
-      <div className='text-2xl text-primary'>
-        <FramerLogo weight='fill'/>
+    <nav className="fixed top-0 left-0 right-0 w-full flex justify-between items-center p-8 px-16 z-50">
+      <div className="w-44 flex items-center gap-x-3">
+        <div className="w-9 h-9 rounded-full bg-lightblack flex justify-center items-center text-white">
+          <MediumLogo weight="fill"/>
+        </div>
+        <h1 className="font-bold tracking-tight text-lightblack">HEI Hospitallity</h1>
       </div>
-      <p className='font-semibold uppercase'>Hei Hospitallity</p>
-    </div>
-    <div className='flex items-center gap-x-8 font-light'>
-      {navLinks.map((item, i) => {
-        return (
-          <Link to={""} key={i}>
-            {item.nav}
-          </Link>
-        )
-      })}
-    </div>
-    <div className='flex justify-end items-center w-64'>
-      <button className=' px-4 py-2 text-sm bg-gradient-to-r from-primary/80 to-primary shadow-sm text-white rounded-xl'>
-        Daftar
-      </button>
-    </div>
-   </nav>
+      <div className="flex items-center justify-center gap-x-12 font-medium text-text">
+        {navLinks.map((item, i) => {
+          return (
+            <a href="" key={i}>
+              {item.nav}
+            </a>
+          )
+        })}
+      </div>
+      <div className="w-44 flex justify-end items-center">
+        <button className="px-6 py-3 rounded-xl bg-lightblack text-white text-sm">
+          Get Started
+        </button>
+      </div>
+    </nav>
   )
 }
 
