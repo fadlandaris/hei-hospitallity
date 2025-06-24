@@ -20,7 +20,7 @@ const Footer = () => {
               <h1>Optimize Every Details of Creating a </h1>
               <h1>Compensation with Hei Hospitallity</h1>
             </div>
-            <button className="px-6 py-3 rounded-xl bg-lightgray text-lightblack mt-12 bg-gradient-to-r from-primary/60 to-primary text-white">
+            <button className="px-6 py-3 rounded-xl bg-lightgray  mt-12 bg-gradient-to-r from-primary/60 to-primary text-white">
               Register Now
             </button>
           </div>
@@ -28,7 +28,7 @@ const Footer = () => {
             <div className="flex flex-col justify-between">
               {navLinks.map((item, i) => {
                 return (
-                  <a className="font-medium" href="">
+                  <a key={i} className="font-medium" href="">
                     {item.nav}
                   </a>
                 )
