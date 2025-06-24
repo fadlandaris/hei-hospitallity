@@ -1,6 +1,6 @@
 import { Exam, Bank, Star } from "phosphor-react"
 import { socialMediaData } from "../data/data"
-import { HERO } from "../assets/assets"
+import { HERO, PERSON_4, PERSON_5, PROGRAM } from "../assets/assets"
 
 const Hero = () => {
   return (
@@ -11,13 +11,13 @@ const Hero = () => {
         <div className="flex flex-col justify-between">
           <div className="">
             <div className="text-6xl leading-18">
-              <h1>Your Direct Path to</h1>
+              <h1>Creating the Hotelier's</h1>
               <div className="flex items-center gap-x-4">
-                <h1>Schooling</h1>
+                <h1>Champion</h1>
                 <div className="w-10 h-10 rounded-2xl bg-primary flex items-center justify-center text-white text-xl">
                   <Exam weight="fill"/>
                 </div>
-                <h1>Services</h1>
+                <h1>,Services</h1>
               </div>
               <div className="flex items-center gap-x-4">
                 <h1>& Hospitallity</h1>
@@ -26,13 +26,13 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-            <p className="mt-8 text-text">Welcome to our place where care meets comfort <br /> and every guest is valued deeply</p>
+            <p className="mt-8 text-text">HEI (Hospitality Education Institute) menawarkan <br /> pendidikan hospitality singkat, terjangkau, <br /> dan menjanjikan karier di dunia <br /> perhotelan & pariwisata</p>
             <div className="flex items-center gap-x-4 mt-8">
               <button className="px-6 py-3 rounded-xl bg-gradient-to-r from-primary/60 to-primary text-white font-medium">
-                Register Now
+                Daftar Sekarang
               </button>
               <button className="px-6 py-3 rounded-xl bg-lightgray  font-medium">
-                Join As Constributor
+                Download Brosur
               </button>
             </div>
           </div>
@@ -58,11 +58,11 @@ const Hero = () => {
             <div className="mt-8 flex items-center gap-x-4">
               {socialMediaData.map((item, i) => {
                 return (
-                  <div key={i} className="p-3 rounded-2xl bg-lightgray hover:scale-120 transition-all duration-500 cursor-pointer group">
+                  <a target="blank" href={item.link} key={i} className="p-3 rounded-2xl bg-lightgray hover:scale-120 transition-all duration-500 cursor-pointer group">
                     <div className="w-8 h-8 flex items-center justify-center bg-primary text-white group-hover:scale-x-[-1] transition-all duration-500 rounded-full ">
                       <item.icon weight="fill"/>
                     </div>
-                  </div>
+                  </a>
                 )
               })}
             </div>
@@ -70,13 +70,13 @@ const Hero = () => {
         </div>
         <div
           className="relative" style={{ backgroundImage: `url(${HERO})`, backgroundSize: 'cover', backgroundPosition: 'bottom' }}>
-          <div className="absolute bottom-8 right-0 bg-gradient-to-b from-lightgray via-white to-white py-4 px-8 rounded-2xl flex justify-center items-center gap-x-4">
+          <div className="absolute bottom-8 right-0 bg-gradient-to-b from-lightgray via-white to-white p-4 rounded-2xl flex justify-center items-center gap-x-4">
             <div className="flex items-center">
-              <div className="w-14 h-20 bg-neutral-300 border-2 border-white rounded-xl"/>
-              <div className="w-14 h-18 bg-neutral-300 border-2 border-white rounded-xl -ml-4"/>
-              <div className="w-14 h-20 bg-neutral-300 border-2 border-white rounded-xl -ml-4"/>
+              <div className="w-14 h-20 bg-neutral rounded-xl" style={{ backgroundImage: `url(${PERSON_4})`, backgroundSize: 'cover', backgroundPosition: 'center' }}/>
+              <div className="w-14 h-18 bg-neutral rounded-xl -ml-4" style={{ backgroundImage: `url(${PERSON_5})`, backgroundSize: 'cover', backgroundPosition: 'center' }}/>
+              <div className="w-14 h-20 bg-neutral rounded-xl -ml-4" style={{ backgroundImage: `url(${PROGRAM})`, backgroundSize: 'cover', backgroundPosition: 'center' }}/>
             </div>
-            <h1 className="text-6xl">100 <span className="text-red-500">+</span></h1>
+            <h1 className="text-6xl">50 <span className="text-primary">+</span></h1>
             <div className="text-text">
               <p>Lulusan</p>
               <p>Terbaik</p>

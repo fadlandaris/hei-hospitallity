@@ -1,7 +1,6 @@
 import { whyUsData, aboutData } from "../data/data"
-import { ABOUT } from "../assets/assets"
+import { ABOUT, ABOUT_1 } from "../assets/assets"
 import { ArrowUpRight } from "phosphor-react"
-import { HERO } from "../assets/assets"
 import Marquee from "react-fast-marquee"
 import { marqueeData } from "../data/data"
 
@@ -22,7 +21,7 @@ const About = () => {
              <div className="flex justify-between items-end">
               <h1 className="uppercase font-medium text-text">New Experience</h1>
               <div className="w-28 h-28 rounded-3xl bg-gradient-to-b from-secondary/50 to-secondary ">
-                <img src={HERO} className="object-cover w-full h-full object-top" alt="" />
+                <img src={ABOUT_1} className="object-cover w-full h-full object-top" alt="" />
               </div>
              </div>
             </div>

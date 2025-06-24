@@ -26,7 +26,7 @@ const Testimony = () => {
                 </div>
                 <div className="mt-8 flex justify-between items-start">
                   <div className="flex gap-x-4">
-                    <div className="w-12 h-12 rounded-full bg-black group-hover:scale-x-[-1] transition-all duration-700"/>
+                    <div className="w-12 h-12 rounded-full bg-black group-hover:scale-x-[-1] transition-all duration-700 bg-cover bg-center" style={{ backgroundImage: `url(${item.img})` }}/>
                     <div>
                       <p className="font-semibold">{item.name}</p>
                       <p className=" text-sm ">{item.subTitle}</p>

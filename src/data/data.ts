@@ -1,6 +1,6 @@
 import type { staticData } from "../type/type"
 import { InstagramLogo, FacebookLogo, TiktokLogo, YoutubeLogo, GraduationCap, Handshake, Globe, Coffee, PaintBrushHousehold, Hamburger, StarFour } from "phosphor-react"
-import { HERO } from "../assets/assets"
+import { ABOUT_1, BARISTA_VIDEO, HERO, INTERNATIONAL_VIDEO, LOCAL_VIDEO, PERSON_4, PERSON_5, PROGRAM, TESTIMONY_AGUNG, TESTIMONY_RIZKI, TESTIMONY_SULTAN } from "../assets/assets"
 
 export const navLinks: staticData[] = [
   {
@@ -29,43 +29,42 @@ export const socialMediaData: staticData[] = [
   {
     id: 1,
     icon: InstagramLogo,
+    link: "https://www.instagram.com/hei.hospitality?igsh=am95bW1xcGo2anNu"
   },
   {
     id: 2,
     icon: FacebookLogo,
+    link: "https://www.facebook.com/share/14F7RNxiWzK/"
   },
   {
     id: 3,
     icon: TiktokLogo,
+    link: "https://www.tiktok.com/@hei.hospitality?_t=ZS-8xTYliYB5OL&_r=1"
   },
-  {
-    id: 4,
-    icon: YoutubeLogo,
-  },
+
 ]
 
 
 export const aboutData: staticData[] = [
-
   {
     id: 1,
     icon: GraduationCap,
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, vel. Sit quia voluptatum ",
-    value: "100",
+    title: "Sistem pendidikan dikemas untuk mendidik siswa / siswi sedemikian rupa sehingga menghasilkan 50+ lulusan yang kompeten",
+    value: "50",
     subTitle: "+",
   },
   {
     id: 2,
     icon: Handshake,
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, vel. Sit quia voluptatum ",
+    title: "Kerja sama industri yang kami jalankan kurang lebih setidaknya terdapat 10 kerjasama dengan industri terkait ",
     value: "10",
     subTitle: "+",
   },
    {
     id: 3,
     icon: Globe,
-    title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, vel. Sit quia voluptatum ",
-    value: "10",
+    title: "Sudah 5 tahun Sejak pendirian HEI yang sudah terkenal menghasilkan lulusan yang berkompeten di bidang hospitality ",
+    value: "5",
     subTitle: "Thn",
   },
 ]
@@ -100,69 +99,76 @@ export const marqueeData: staticData[] = [
   },
    {
     id: 2,
-    img: HERO,
+    img: ABOUT_1,
   },
    {
     id: 3,
-    img: HERO,
+    img: PROGRAM,
   },
    {
     id: 4,
-    img: HERO,
+    img: PERSON_4,
   },
    {
     id: 5,
-    img: HERO,
+    img: PERSON_5,
   },
 ]
 
 export const programData: staticData[] = [
   {
     id: 1,
-    title: "Class of Barista Service",
+    title: "Hotel Exclusive (International)",
     icon: Coffee,
-    video : "",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quasi eum tenetur iusto, ad qui similique sed? Error, iure quibusdam."
+    video : INTERNATIONAL_VIDEO,
+    desc: "Proses pembelajaran interaktif pendidikan teori & praktek selama 3 Bulan on the job training 6 bulan di Malaysia, Singapore, Turki. Full praktek english service, sertifikat pendidikan setara diploma, dan Mess selama pendidikan"
   },
    {
     id: 2,
     icon: PaintBrushHousehold,
-    title: "Class of House Keeping Service",
-    video : "",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quasi eum tenetur iusto, ad qui similique sed? Error, iure quibusdam."
+    title: "Hotel Intensive (Local)",
+    video : LOCAL_VIDEO,
+    desc: "Proses pembelajaran interaktif pendidikan teori & praktek selama 3 Bulan on the job training 6 bulan di Hotel bintang 4 dan 5 di indonesia. Full praktek english service, sertifikat pendidikan setara diploma, dan Mess selama pendidikan"
   },
    {
     id: 3,
     icon: Hamburger,
-    title: " Class Food & Beverage Service",
-    video : "",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quasi eum tenetur iusto, ad qui similique sed? Error, iure quibusdam."
+    title: "Hotel Executive Cruise Ship",
+    video : INTERNATIONAL_VIDEO,
+    desc: "Proses pembelajaran interaktif pendidikan teori & praktek selama 2 Bulan dan memiliki pengalaman hotel minimal 6 bulan. Full praktek english for interview & hotel dibantu disalurkan ke agen kapal pesiar dan Mess selama pendidikan"
+  },
+   {
+    id: 4,
+    icon: Hamburger,
+    title: "Barista Specialist",
+    video : BARISTA_VIDEO,
+    desc: "Proses pembelajaran interaktif pendidikan teori & praktek selama 1 Bulan. Full praktek english for interview & hotel, sertifikat pelatihan, dan Mess selama pendidikan"
   },
 ]
 
 export const testimonyData: staticData[] = [
   {
     id: 1,
-    img: "",
-    name: "David Julianto",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat debitis voluptatum iusto magnam, asperiores suscipit dignissimos reiciendis sit sunt? Assumenda, accusamus! Tempora aspernatur quis deserunt sequi ab in veritatis aperiam.",
+    img: TESTIMONY_AGUNG,
+    name: "Agung",
+    desc: "ALHAMDULILLAH di berikan kelancaran semuanya setelah bergabung dengan HEI. Mimpiku untuk berkarir di luar negeri akhirnya terwujud. Thank you very much HEI - dan TJL cabang Subang",
     icon : StarFour,
-    subTitle: "Founder PT Best Creations",
+    subTitle: "HK Attendant - Princess Cruise Lines",
   },
   {
     id: 2,
-    img: "",
-    name: "David Julianto",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat debitis voluptatum iusto magnam, asperiores suscipit dignissimos reiciendis sit sunt? Assumenda, accusamus! Tempora aspernatur quis deserunt sequi ab in veritatis aperiam.",
+    img: TESTIMONY_SULTAN,
+    name: "Sultan Ahmad R",
+    desc: "Proses tak pernah mengkhianati hasil dan semua perjuangan ku berbuah manis. Bisa bekerja di salah satu perusahaan Cruise Line terbesar di Dunia dan keliling dunia. Terimakasih HEI - Hospitallity Education Institute SUBANG ",
     icon : StarFour,
-    subTitle: "Founder PT Best Creations",
+    subTitle: "HK Attendant - Norwegian CL ",
   },
   {
     id: 3,
-    img: "",
-    name: "David Julianto",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat debitis voluptatum iusto magnam, asperiores suscipit dignissimos reiciendis sit sunt? Assumenda, accusamus! Tempora aspernatur quis deserunt sequi ab in veritatis aperiam.",
+    img: TESTIMONY_RIZKI,
+    name: "Rizki Saputra",
+    desc: "Hei.. kalian anak-anak muda ayo mari jangan buang waktu kalian dirumah. langkahkan kaki kalian dan berjuang untuk masa depan. Pokoknya kalian tidak akan menyesal deh bergabung dengan HEI, saya buktinya HEI The hospitality champions",
     icon : StarFour,
-    subTitle: "Founder PT Best Creations",
+    subTitle: "Waiter - Middle East",
   },
 ]

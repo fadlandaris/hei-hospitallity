@@ -1,6 +1,7 @@
-import { MediumLogo, ArrowUp } from "phosphor-react"
+import { ArrowUp } from "phosphor-react"
 import { navLinks } from "../data/data"
 import { socialMediaData } from "../data/data"
+import { LOGO } from "../assets/assets"
 
 const Footer = () => {
   return (
@@ -10,18 +11,17 @@ const Footer = () => {
       <div className="">
         <div className="grid grid-cols-3">
           <div className=" col-span-2">
-              <div className="flex items-center gap-x-4">
-                <div className="w-8 h-8 rounded-full bg-lightgray flex justify-center items-center text-lightblack">
-                  <MediumLogo weight="fill"/>
+              <div className="flex items-center gap-x-2">
+                 <div className="w-8 h-8 p-1 rounded-full bg-primary flex justify-center items-center text-white">
+                  <img src={LOGO} alt="" />
                 </div>
-                <h1 className="font-semibold uppercase ">HEI Hospitallity</h1>
               </div>
             <div className="text-5xl mt-8 leading-14">
               <h1>Optimize Every Details of Creating a </h1>
               <h1>Compensation with Hei Hospitallity</h1>
             </div>
             <button className="px-6 py-3 rounded-xl bg-lightgray  mt-12 bg-gradient-to-r from-primary/60 to-primary text-white">
-              Register Now
+              Daftar Sekarang
             </button>
           </div>
           <div className=" grid grid-cols-2">
@@ -38,11 +38,11 @@ const Footer = () => {
               <div className=" flex items-center justify-between">
                 {socialMediaData.map((item, i) => {
                   return (
-                    <div key={i} className="scale-80 p-3 rounded-2xl bg-white hover:scale-100 transition-all duration-500 cursor-pointer group">
+                    <a href={item.link} target="blank" key={i} className=" p-3 rounded-2xl bg-white hover:scale-120 transition-all duration-500 cursor-pointer group">
                       <div className="w-8 h-8 flex items-center justify-center bg-primary text-white group-hover:scale-x-[-1] transition-all duration-500 rounded-full ">
                         <item.icon weight="fill"/>
                       </div>
-                    </div>
+                    </a>
                   )
                 })}
               </div>
