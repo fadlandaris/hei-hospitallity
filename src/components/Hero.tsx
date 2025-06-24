@@ -5,7 +5,7 @@ import { HERO } from "../assets/assets"
 const Hero = () => {
   return (
     <main className="mt-36 px-16  ">
-      <div className="h-screen relative grid grid-cols-2">
+      <div className="h-screen relative grid grid-cols-2 ">
         <div className="absolute bg-gradient-to-b from-lightgray to-white w-[500px] h-72 rounded-4xl bottom-16 left-1/2 -translate-x-1/2 "/>
         <div className="absolute bg-gradient-to-b from-lightgray to-white w-[500px] h-64 rounded-4xl top-0 right-32 "/>
         <div className="flex flex-col justify-between">
@@ -20,7 +20,7 @@ const Hero = () => {
                 <h1>Greetings</h1>
               </div>
               <div className="flex items-center gap-x-4">
-                <h1>& Endorsement.</h1>
+                <h1>& Endorsement</h1>
                 <div className="w-10 h-10 rounded-2xl bg-yellow-500 flex items-center justify-center text-white text-xl">
                   <Bank weight="fill"/>
                 </div>
@@ -69,13 +69,7 @@ const Hero = () => {
           </div>
         </div>
         <div
-          className="relative"
-          style={{
-            backgroundImage: `url(${HERO})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'bottom'
-          }}
-        >
+          className="relative" style={{ backgroundImage: `url(${HERO})`, backgroundSize: 'cover', backgroundPosition: 'bottom' }}>
           <div className="absolute bottom-8 right-0 bg-gradient-to-b from-lightgray via-white to-white py-4 px-8 rounded-2xl flex justify-center items-center gap-x-4">
             <div className="flex items-center">
               <div className="w-14 h-20 bg-neutral-300 border-2 border-white rounded-xl"/>

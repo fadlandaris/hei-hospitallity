@@ -24,7 +24,7 @@ const Programs = () => {
             return (
               <div key={i} className={`${i === programData.length - 1  ? "border-b" : ""} group hover:py-24 transition-all duration-500 cursor-pointer border-t py-20 border-text/20 grid grid-cols-2 `}>
                 <div className="group-hover:scale-105 transition-all duration-500">
-                  <p className="mb-4 text-xl font-semibold italic text-text">0{item.id}</p>
+                  <p className="mb-4 text-lg font-semibold italic text-text">0{item.id}</p>
                   <h1 className="text-3xl font-medium w-1/2">{item.title}</h1>
                 </div>
                 <div className="flex justify-between group-hover:scale-105 transition-all duration-500">
