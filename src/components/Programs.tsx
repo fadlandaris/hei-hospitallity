@@ -39,7 +39,7 @@ const Programs = () => {
                     {showVideo === item.id ? <X size={15} weight="bold" /> : <Play weight="fill" />}
                   </button>
                 </div>
-                <div className={`mt-16 col-span-2 transition-all duration-500 ease-in-out ${showVideo === item.id ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0 overflow-hidden"}`}>
+                <div className={`mt-16 col-span-2 transition-all duration-700 ease-in-out ${showVideo === item.id ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0 overflow-hidden"}`}>
                   <div className="border h-[60vh] overflow-hidden rounded-3xl">
                     <video controls className="w-full h-full object-cover">
                       <source src={item.video} type="video/mp4" />

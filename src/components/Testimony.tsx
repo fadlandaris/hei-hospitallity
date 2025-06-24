@@ -1,7 +1,6 @@
 import { ArrowUpRight } from "phosphor-react"
 import { testimonyData } from "../data/data"
 
-
 const Testimony = () => {
   return (
     <main className="px-16 mt-24 ">
@@ -18,7 +17,7 @@ const Testimony = () => {
                 "left-[50%] -bottom-8 bg-white/20 backdrop-blur-xl rotate-6 cursor-pointer hover:rotate-12 hover:left-[55%] hover:bg-white/90 hover:text-lightblack hover:z-20 hover:bottom-16 transition-all duration-700", 
               ];
             return (
-              <div key={i} className={`absolute p-6 rounded-2xl w-[500px] group shadow ${cardClasses[i]}`}>
+              <div key={i} className={`absolute p-8 rounded-2xl w-[500px] group shadow ${cardClasses[i]}`}>
                 <div className="flex justify-between items-start">
                   <p className="w-[80%]">{item.desc}</p>
                   <div className="w-12 h-12 rounded-full border-2 border-dashed flex items-center justify-center group-hover:scale-x-[-1] transition-all duration-700">
