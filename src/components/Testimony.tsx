@@ -1,9 +1,8 @@
-import { StarFour, Diamond, ArrowUpRight } from "phosphor-react"
+import { ArrowUpRight } from "phosphor-react"
 import { testimonyData } from "../data/data"
 
-type Props = {}
 
-const Testimony = (props: Props) => {
+const Testimony = () => {
   return (
     <main className="px-16 mt-24 ">
       <div className="overflow-hidden rounded-4xl bg-gradient-to-b from-red-500/60 to-red-500 h-[90vh] text-white p-16 relative">
