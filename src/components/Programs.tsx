@@ -1,15 +1,22 @@
-import { programData } from "../data/data"
-import {  Play } from "phosphor-react"
-import { HERO } from "../assets/assets"
+import { useState } from "react";
+import { programData } from "../data/data";
+import { Play, X } from "phosphor-react";
+import { HERO } from "../assets/assets";
 
 const Programs = () => {
+  const [showVideo, setShowVideo] = useState<number | null>(null);
+
+  const toggleVideo = (id: number) => {
+    setShowVideo(showVideo === id ? null : id);
+  };
+
   return (
     <main className="mt-20 px-16">
       <div className="">
         <div className="flex items-start justify-between group">
           <div>
             <h1 className="text-5xl leading-14 flex items-center gap-x-4">
-              Stay Happy 
+              Stay Happy
               <div className="w-20 h-12 bg-gradient-to-b from-red-500/50 to-red-500/80 rounded-2xl relative group-hover:scale-x-[-1] transition-all duration-500">
                 <img src={HERO} className="absolute bottom-0 right-1/2 translate-x-1/2 w-16 h-20" />
               </div>
@@ -17,29 +24,36 @@ const Programs = () => {
             </h1>
             <h1 className="text-5xl leading-14">Our Selected Programs</h1>
           </div>
-          <p className="text-text w-1/3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, accusamus a? Molestias autem soluta aperiam neque sit corrupti quaerat temporibus?</p>
+          <p className="text-text w-1/3">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, accusamus a? Molestias autem soluta aperiam neque sit corrupti quaerat temporibus?</p>
         </div>
-        <div className="mt-24 grid grid-cols-1">
+        <div className="mt-24 grid grid-cols-1 gap-y-4">
           {programData.map((item, i) => {
             return (
-              <div key={i} className={`${i === programData.length - 1  ? "border-b" : ""} group hover:py-24 transition-all duration-500 cursor-pointer border-t py-20 border-text/20 grid grid-cols-2 `}>
-                <div className="group-hover:scale-105 transition-all duration-500">
-                  <p className="mb-4 text-lg font-semibold italic text-text">0{item.id}</p>
+              <div key={item.id} className={`${i === programData.length - 1 ? "border-b" : ""} group hover:py-20 transition-all duration-500 cursor-pointer border-t py-16 border-text/20 grid grid-cols-2`}>
+                <div className="">
                   <h1 className="text-3xl font-medium w-1/2">{item.title}</h1>
                 </div>
-                <div className="flex justify-between group-hover:scale-105 transition-all duration-500">
-                  <p className="w-[50%] text-text">{item.desc}</p>
-                 <button className="cursor-pointer w-10 h-10 flex justify-center items-center rounded-full bg-gradient-to-b from-red-500/50 to-red-500/80 text-white text-sm group-hover:scale-x-[-1] transition-all duration-500">
-                   <Play weight="fill"/>
-                 </button>
+                <div className="flex justify-between">
+                  <p className="w-[70%] text-lightblack">{item.desc}</p>
+                  <button onClick={() => toggleVideo(item.id)} className="cursor-pointer w-10 h-10 flex justify-center items-center rounded-full bg-gradient-to-b from-red-500/50 to-red-500/80 text-white text-sm group-hover:scale-x-[-1] transition-all duration-500 z-10">
+                    {showVideo === item.id ? <X size={15} weight="bold" /> : <Play weight="fill" />}
+                  </button>
+                </div>
+                <div className={`mt-16 col-span-2 transition-all duration-500 ease-in-out ${showVideo === item.id ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0 overflow-hidden"}`}>
+                  <div className="border h-[60vh] overflow-hidden rounded-3xl">
+                    <video controls className="w-full h-full object-cover">
+                      <source src={item.video} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
                 </div>
               </div>
-            )
+            );
           })}
         </div>
       </div>
     </main>
-  )
-}
+  );
+};
 
-export default Programs
+export default Programs;

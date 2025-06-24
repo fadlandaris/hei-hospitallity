@@ -1,5 +1,5 @@
 import type { staticData } from "../type/type"
-import { InstagramLogo, FacebookLogo, TiktokLogo, YoutubeLogo, GraduationCap, Handshake, Globe, Coffee, PaintBrushHousehold, Hamburger } from "phosphor-react"
+import { InstagramLogo, FacebookLogo, TiktokLogo, YoutubeLogo, GraduationCap, Handshake, Globe, Coffee, PaintBrushHousehold, Hamburger, StarFour } from "phosphor-react"
 import { HERO } from "../assets/assets"
 
 export const navLinks: staticData[] = [
@@ -137,5 +137,32 @@ export const programData: staticData[] = [
     title: " Class Food & Beverage Service",
     video : "",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quasi eum tenetur iusto, ad qui similique sed? Error, iure quibusdam."
+  },
+]
+
+export const testimonyData: staticData[] = [
+  {
+    id: 1,
+    img: "",
+    name: "David Julianto",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat debitis voluptatum iusto magnam, asperiores suscipit dignissimos reiciendis sit sunt? Assumenda, accusamus! Tempora aspernatur quis deserunt sequi ab in veritatis aperiam.",
+    icon : StarFour,
+    subTitle: "Founder PT Best Creations",
+  },
+  {
+    id: 2,
+    img: "",
+    name: "David Julianto",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat debitis voluptatum iusto magnam, asperiores suscipit dignissimos reiciendis sit sunt? Assumenda, accusamus! Tempora aspernatur quis deserunt sequi ab in veritatis aperiam.",
+    icon : StarFour,
+    subTitle: "Founder PT Best Creations",
+  },
+  {
+    id: 3,
+    img: "",
+    name: "David Julianto",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat debitis voluptatum iusto magnam, asperiores suscipit dignissimos reiciendis sit sunt? Assumenda, accusamus! Tempora aspernatur quis deserunt sequi ab in veritatis aperiam.",
+    icon : StarFour,
+    subTitle: "Founder PT Best Creations",
   },
 ]

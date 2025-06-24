@@ -9,4 +9,5 @@ export interface staticData {
     desc? : string
     img?: string
     video?: string
+    name? : string
 }
