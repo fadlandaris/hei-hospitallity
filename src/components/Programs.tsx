@@ -17,7 +17,7 @@ const Programs = () => {
           <div>
             <h1 className="text-5xl leading-14 flex items-center gap-x-4">
               Stay Happy
-              <div className="w-20 h-12 bg-gradient-to-b from-red-500/50 to-red-500/80 rounded-2xl relative group-hover:scale-x-[-1] transition-all duration-500">
+              <div className="w-20 h-12 bg-gradient-to-b from-secondary/50 to-secondary rounded-2xl relative group-hover:scale-x-[-1] transition-all duration-500">
                 <img src={HERO} className="absolute bottom-0 right-1/2 translate-x-1/2 w-16 h-20" />
               </div>
               With
@@ -35,7 +35,7 @@ const Programs = () => {
                 </div>
                 <div className="flex justify-between">
                   <p className="w-[70%] text-lightblack">{item.desc}</p>
-                  <button onClick={() => toggleVideo(item.id)} className="cursor-pointer w-10 h-10 flex justify-center items-center rounded-full bg-gradient-to-b from-red-500/50 to-red-500/80 text-white text-sm group-hover:scale-x-[-1] transition-all duration-500 z-10">
+                  <button onClick={() => toggleVideo(item.id)} className="cursor-pointer w-10 h-10 flex justify-center items-center rounded-full bg-gradient-to-b from-primary/50 to-primary text-white text-sm group-hover:scale-x-[-1] transition-all duration-500 z-10">
                     {showVideo === item.id ? <X size={15} weight="bold" /> : <Play weight="fill" />}
                   </button>
                 </div>

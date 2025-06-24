@@ -4,7 +4,7 @@ import { testimonyData } from "../data/data"
 const Testimony = () => {
   return (
     <main className="px-16 mt-24 ">
-      <div className="overflow-hidden rounded-4xl bg-gradient-to-b from-red-500/60 to-red-500 h-[90vh] text-white p-16 relative">
+      <div className="overflow-hidden rounded-4xl bg-gradient-to-b from-primary to-blue-400 h-[90vh] text-white p-16 relative">
         <div className=" text-5xl leading-16">
           <h1>We Empower Companies to find Purpose</h1>
           <h1>and Delivers goals, Explore Our Clients </h1>
@@ -12,9 +12,9 @@ const Testimony = () => {
         </div>
           {testimonyData.map((item, i) => {
              const cardClasses = [
-                "right-[50%] -bottom-8 bg-white/20 backdrop-blur-xl -rotate-6 cursor-pointer hover:-rotate-12 hover:right-[55%] hover:bg-white/90 hover:text-lightblack hover:z-20 hover:bottom-16 transition-all duration-700",
+                "right-[50%] -bottom-8 bg-white/20 backdrop-blur-md -rotate-6 cursor-pointer hover:-rotate-12 hover:right-[55%] hover:bg-white/90 hover:text-lightblack hover:z-20 hover:bottom-16 transition-all duration-700",
                 "left-1/2 -translate-x-1/2 bottom-16 bg-white/90 backdrop-blur-xl text-lightblack z-10 cursor-pointer", 
-                "left-[50%] -bottom-8 bg-white/20 backdrop-blur-xl rotate-6 cursor-pointer hover:rotate-12 hover:left-[55%] hover:bg-white/90 hover:text-lightblack hover:z-20 hover:bottom-16 transition-all duration-700", 
+                "left-[50%] -bottom-8 bg-white/20 backdrop-blur-md rotate-6 cursor-pointer hover:rotate-12 hover:left-[55%] hover:bg-white/90 hover:text-lightblack hover:z-20 hover:bottom-16 transition-all duration-700", 
               ];
             return (
               <div key={i} className={`absolute p-8 rounded-2xl w-[500px] group shadow ${cardClasses[i]}`}>

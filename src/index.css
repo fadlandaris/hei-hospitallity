@@ -3,14 +3,15 @@
 
 
 @theme {
-  --color-primary: #60aea2;
+  --color-primary: #00bcd5;
+  --color-secondary: #98f7b1;
   --color-lightgray: #f5f5f5;
-  --color-lightblack: #333333;
+  --color-lightblack: #000000;
   --color-text: #737373;
   --font-manrope: "Manrope", sans-serif;
 }
 
 
 body {
-  @apply font-manrope pb-24 text-lightblack;
+  @apply font-manrope text-lightblack;
 }
