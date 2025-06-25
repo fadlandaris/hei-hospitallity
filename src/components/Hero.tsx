@@ -20,7 +20,7 @@ const Hero = () => {
                 <h1>,Services</h1>
               </div>
               <div className="flex items-center gap-x-4">
-                <h1>& Hospitallity</h1>
+                <h1>& Hospitallity.</h1>
                 <div className="w-10 h-10 rounded-2xl bg-secondary flex items-center justify-center text-white text-xl">
                   <Bank weight="fill"/>
                 </div>
