@@ -1,27 +1,27 @@
 import type { staticData } from "../type/type"
 import { InstagramLogo, FacebookLogo, TiktokLogo, GraduationCap, Handshake, Globe, Coffee, PaintBrushHousehold, Hamburger, StarFour } from "phosphor-react"
-import { ABOUT_1, BARISTA_VIDEO, HERO, INTERNATIONAL_VIDEO, LOCAL_VIDEO, PERSON_4, PERSON_5, PROGRAM, TESTIMONY_AGUNG, TESTIMONY_RIZKI, TESTIMONY_SULTAN } from "../assets/assets"
+import { ABOUT_1, BARISTA_VIDEO, HERO, INTERNATIONAL_VIDEO, LOCAL_VIDEO, LOGO_1, LOGO_10, LOGO_11, LOGO_12, LOGO_2, LOGO_3, LOGO_4, LOGO_5, LOGO_6, LOGO_7, LOGO_8, LOGO_9, PERSON_4, PERSON_5, PROGRAM, TESTIMONY_AGUNG, TESTIMONY_RIZKI, TESTIMONY_SULTAN } from "../assets/assets"
 
 export const navLinks: staticData[] = [
   {
     id: 1,
     nav: "Home",
-    link: "/home",
+    link: "home",
   },
   {
-    id: 1,
+    id: 2,
     nav: "About",
-    link: "/home",
+    link: "about",
   },
   {
-    id: 1,
-    nav: "Services",
-    link: "/home",
+    id: 3,
+    nav: "Programs",
+    link: "programs",
   },
   {
-    id: 1,
+    id: 4,
     nav: "Testimony",
-    link: "/home",
+    link: "testimony",
   },
 ]
 
@@ -170,5 +170,56 @@ export const testimonyData: staticData[] = [
     desc: "Hei.. kalian anak-anak muda ayo mari jangan buang waktu kalian dirumah. langkahkan kaki kalian dan berjuang untuk masa depan. Pokoknya kalian tidak akan menyesal deh bergabung dengan HEI, saya buktinya HEI The hospitality champions",
     icon : StarFour,
     subTitle: "Waiter - Middle East",
+  },
+]
+
+export const logoData: staticData[] = [
+  {
+    id: 1,
+    img: LOGO_1, 
+  },
+  {
+    id: 2,
+    img: LOGO_2, 
+  },
+  {
+    id: 3,
+    img: LOGO_3, 
+  },
+  {
+    id: 4,
+    img: LOGO_4, 
+  },
+  {
+    id: 5,
+    img: LOGO_5, 
+  },
+  {
+    id: 6,
+    img: LOGO_6, 
+  },
+  {
+    id: 7,
+    img: LOGO_7, 
+  },
+  {
+    id: 8,
+    img: LOGO_8, 
+  },
+  {
+    id: 9,
+    img: LOGO_9, 
+  },
+  {
+    id: 10,
+    img: LOGO_10, 
+  },
+  {
+    id: 11,
+    img: LOGO_11, 
+  },
+  {
+    id: 12,
+    img: LOGO_12, 
   },
 ]

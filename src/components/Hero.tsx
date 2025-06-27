@@ -1,10 +1,11 @@
 import { Exam, Bank, Star } from "phosphor-react"
 import { socialMediaData } from "../data/data"
 import { HERO, PERSON_4, PERSON_5, PROGRAM } from "../assets/assets"
+import { Link } from "react-router-dom"
 
 const Hero = () => {
   return (
-    <main className="mt-36 px-16 ">
+    <main id="home" className="mt-36 px-16 ">
       <div className="h-screen relative grid grid-cols-2 ">
         <div className="absolute bg-gradient-to-b from-secondary/20 to-white w-[500px] h-72 rounded-4xl bottom-16 left-1/2 -translate-x-1/2 "/>
         <div className="absolute bg-gradient-to-b from-primary/20 to-white w-[500px] h-64 rounded-4xl top-0 right-32 "/>
@@ -28,9 +29,9 @@ const Hero = () => {
             </div>
             <p className="mt-8 text-text">HEI (Hospitality Education Institute) menawarkan <br /> pendidikan hospitality singkat, terjangkau, <br /> dan menjanjikan karier di dunia <br /> perhotelan & pariwisata</p>
             <div className="flex items-center gap-x-4 mt-8">
-              <button className="px-6 py-3 rounded-xl bg-gradient-to-r from-primary/60 to-primary text-white font-medium">
+              <Link to={`/pendaftaran-siswa`} className="px-6 py-3 rounded-xl bg-gradient-to-r from-primary/60 to-primary text-white font-medium">
                 Daftar Sekarang
-              </button>
+              </Link>
               <button className="px-6 py-3 rounded-xl bg-lightgray  font-medium">
                 Download Brosur
               </button>
@@ -77,7 +78,7 @@ const Hero = () => {
               <div className="w-14 h-20 bg-neutral rounded-xl -ml-4" style={{ backgroundImage: `url(${PROGRAM})`, backgroundSize: 'cover', backgroundPosition: 'center' }}/>
             </div>
             <h1 className="text-6xl">50 <span className="text-primary">+</span></h1>
-            <div className="text-text">
+            <div className="text-lightblack">
               <p>Lulusan</p>
               <p>Terbaik</p>
             </div>

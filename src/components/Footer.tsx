@@ -2,12 +2,13 @@ import { ArrowUp } from "phosphor-react"
 import { navLinks } from "../data/data"
 import { socialMediaData } from "../data/data"
 import { LOGO } from "../assets/assets"
+import { Link } from "react-router-dom"
 
 const Footer = () => {
   return (
     <footer className="mt-32 bg-gradient-to-b bg-black text-white px-16 py-24 relative overflow-hidden">
-      <div className="w-64 h-32 absolute bg-primary blur-[200px] bottom-0 right-0"/>
-      <div className="w-64 h-32 absolute bg-secondary blur-[200px] bottom-0 left-0"/>
+      <div className="w-64 h-32 absolute bg-primary blur-[150px] bottom-0 right-0"/>
+      <div className="w-64 h-32 absolute bg-secondary blur-[150px] bottom-0 left-0"/>
       <div className="">
         <div className="grid grid-cols-3">
           <div className=" col-span-2">
@@ -20,9 +21,11 @@ const Footer = () => {
               <h1>Optimize Every Details of Creating a </h1>
               <h1>Compensation with Hei Hospitallity</h1>
             </div>
-            <button className="px-6 py-3 rounded-xl bg-lightgray  mt-12 bg-gradient-to-r from-primary/60 to-primary text-white">
-              Daftar Sekarang
-            </button>
+            <div className="mt-12">
+              <Link to={`/pendaftaran-siswa`} className="px-6 py-3 rounded-xl bg-lightgray bg-gradient-to-r from-primary/60 to-primary text-white">
+                Daftar Sekarang
+              </Link>
+            </div>
           </div>
           <div className=" grid grid-cols-2">
             <div className="flex flex-col justify-between">

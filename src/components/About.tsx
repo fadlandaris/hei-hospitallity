@@ -6,7 +6,7 @@ import { marqueeData } from "../data/data"
 
 const About = () => {
   return (
-    <main className="py-16 mt-16  bg-gradient-to-b from-lightgray to-lightgray/50">
+    <main id="about" className="py-16 mt-16  bg-gradient-to-b from-lightgray to-lightgray/50">
       <div className="px-16">
         <h1 className="text-5xl leading-14">Bridging the Gap <br />Between Artist and Fans</h1>
         <div className="mt-16">

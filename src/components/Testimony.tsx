@@ -3,7 +3,7 @@ import { testimonyData } from "../data/data"
 
 const Testimony = () => {
   return (
-    <main className="px-16 mt-24 ">
+    <main id="testimony" className="px-16 mt-24 ">
       <div className="overflow-hidden rounded-4xl bg-gradient-to-b from-primary to-blue-400 h-[90vh] text-white p-16 relative">
         <div className=" text-5xl leading-16">
           <h1>We Empower Companies to find Purpose</h1>

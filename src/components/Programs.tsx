@@ -19,7 +19,7 @@ const Programs = () => {
   };
 
   return (
-    <main className="mt-20 px-16">
+    <main id="programs" className="mt-20 px-16">
       <div className="">
         <div className="flex items-start justify-between group">
           <div>
