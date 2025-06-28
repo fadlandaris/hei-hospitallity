@@ -3,10 +3,10 @@ import { testimonyData } from "../data/data"
 
 const Testimony = () => {
   return (
-    <main id="testimony" className="px-16 mt-24 ">
+    <main id="testimony" className="lg:px-16 mt-24 ">
       <div className="overflow-hidden rounded-4xl bg-gradient-to-b from-primary to-blue-400 h-[90vh] text-white p-16 relative">
-        <div className=" text-5xl leading-16">
-          <h1>We Empower Companies to find Purpose</h1>
+        <div className="text-3xl xl:text-5xl xl:leading-16">
+          <h1>We Empower Students to find Purpose</h1>
           <h1>and Delivers goals, Explore Our Clients </h1>
           <h1>Success Stories</h1>
         </div>
@@ -17,7 +17,7 @@ const Testimony = () => {
                 "left-[50%] -bottom-8 bg-white/20 backdrop-blur-md rotate-6 cursor-pointer hover:rotate-12 hover:left-[55%] hover:bg-white/90 hover:text-lightblack hover:z-20 hover:bottom-16 transition-all duration-700", 
               ];
             return (
-              <div key={i} className={`absolute p-8 rounded-2xl w-[500px] group shadow ${cardClasses[i]}`}>
+              <div key={i} className={`absolute p-8 rounded-2xl scale-70 md:scale-90 xl:scale-100 w-[500px] group shadow ${cardClasses[i]}`}>
                 <div className="flex justify-between items-start">
                   <p className="w-[80%]">{item.desc}</p>
                   <div className="w-12 h-12 rounded-full border-2 border-dashed flex items-center justify-center group-hover:scale-x-[-1] transition-all duration-700">

@@ -6,7 +6,7 @@ import {
   deleteDoc,
   doc,
   query,
-  orderBy
+  orderBy,
 } from 'firebase/firestore';
 import { onAuthStateChanged } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
@@ -18,20 +18,18 @@ const AdminDashboard = () => {
   const [isAuthChecked, setIsAuthChecked] = useState(false);
   const navigate = useNavigate();
 
-  // 🔐 Cek apakah admin sudah login
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (!user) {
         navigate('/admin/login');
       } else {
-        setIsAuthChecked(true); // ✅ Autentikasi sukses
+        setIsAuthChecked(true);
       }
-      setLoading(false); // Firebase sudah selesai mengecek
+      setLoading(false);
     });
     return () => unsubscribe();
   }, [navigate]);
 
-  // 📦 Ambil data dari Firestore
   const fetchData = async () => {
     const q = query(collection(db, 'pendaftaran-siswa'), orderBy('createdAt', 'desc'));
     const snapshot = await getDocs(q);
@@ -52,7 +50,6 @@ const AdminDashboard = () => {
     fetchData();
   }, []);
 
-  // ⏳ Tampilkan loading saat autentikasi masih diproses
   if (!isAuthChecked || loading) {
     return (
       <div className="h-screen flex items-center justify-center">
@@ -63,42 +60,44 @@ const AdminDashboard = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 py-10 px-6">
+    <div className="min-h-screen bg-gray-50 py-6 px-4 sm:px-6 md:px-10">
       <Toaster position="top-right" />
-      <div className="max-w-6xl mx-auto bg-white shadow-md rounded-lg p-8">
-        <h1 className="text-3xl font-bold text-primary mb-6">Dashboard Admin</h1>
+      <div className="max-w-6xl mx-auto bg-white shadow-md rounded-lg p-4 sm:p-6 md:p-8">
+        <h1 className="text-2xl sm:text-3xl font-bold text-primary mb-4 sm:mb-6">
+          Dashboard Admin
+        </h1>
 
         <div className="overflow-x-auto">
-          <table className="w-full table-auto border-collapse border border-gray-200">
+          <table className="min-w-full table-auto border-collapse border border-gray-300 text-xs sm:text-sm">
             <thead>
               <tr className="bg-primary text-white">
-                <th className="py-2 px-4 border">Nama Depan</th>
-                <th className="py-2 px-4 border">Nama Belakang</th>
-                <th className="py-2 px-4 border">Email</th>
-                <th className="py-2 px-4 border">Program</th>
-                <th className="py-2 px-4 border">Whatsapp</th>
-                <th className="py-2 px-4 border">Tanggal Daftar</th>
-                <th className="py-2 px-4 border">Aksi</th>
+                <th className="py-2 px-2 sm:px-4 border">Nama Depan</th>
+                <th className="py-2 px-2 sm:px-4 border">Nama Belakang</th>
+                <th className="py-2 px-2 sm:px-4 border">Email</th>
+                <th className="py-2 px-2 sm:px-4 border">Program</th>
+                <th className="py-2 px-2 sm:px-4 border">Whatsapp</th>
+                <th className="py-2 px-2 sm:px-4 border">Tanggal Daftar</th>
+                <th className="py-2 px-2 sm:px-4 border">Aksi</th>
               </tr>
             </thead>
             <tbody>
               {data.map((item) => (
                 <tr key={item.id} className="text-center hover:bg-gray-100">
-                  <td className="py-2 px-4 border">{item.foreName}</td>
-                  <td className="py-2 px-4 border">{item.middleName}</td>
-                  <td className="py-2 px-4 border">{item.email}</td>
-                  <td className="py-2 px-4 border">{item.program}</td>
-                  <td className="py-2 px-4 border">{item.whatsapp}</td>
-                  <td className="py-2 px-4 border text-sm text-gray-600">
+                  <td className="py-2 px-2 sm:px-4 border">{item.foreName}</td>
+                  <td className="py-2 px-2 sm:px-4 border">{item.middleName}</td>
+                  <td className="py-2 px-2 sm:px-4 border">{item.email}</td>
+                  <td className="py-2 px-2 sm:px-4 border">{item.program}</td>
+                  <td className="py-2 px-2 sm:px-4 border">{item.whatsapp}</td>
+                  <td className="py-2 px-2 sm:px-4 border text-gray-600">
                     {item.createdAt?.toDate().toLocaleString('id-ID', {
                       dateStyle: 'medium',
-                      timeStyle: 'short'
+                      timeStyle: 'short',
                     })}
                   </td>
-                  <td className="py-2 px-4 border">
+                  <td className="py-2 px-2 sm:px-4 border">
                     <button
                       onClick={() => handleDelete(item.id)}
-                      className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600 transition"
+                      className="bg-red-500 text-white text-xs sm:text-sm px-2 sm:px-3 py-1 rounded hover:bg-red-600 transition"
                     >
                       Hapus
                     </button>

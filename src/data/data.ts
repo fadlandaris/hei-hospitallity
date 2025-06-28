@@ -73,22 +73,22 @@ export const whyUsData: staticData[] = [
   {
     id: 1,
     title: "Infrastruktur Valid",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
+    desc: "infrastuktur yang valid dan didukung oleh mentor profesional"
   },
    {
     id: 2,
     title: "Kuliah Untung",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
+    desc: "Kuliah untung dengan biaya minim dan hasil maksimal "
   },
    {
     id: 3,
     title: "Penempatan Kerja",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
+    desc: "Mendapatkan penempatan dan kesempatan bekerja diluar negeri "
   },
    {
     id: 4,
     title: "Kuliah Cepat Kerja",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. "
+    desc: "Melakukan prakter kerja langsung dan siap untuk bekerja "
   },
 ]
 

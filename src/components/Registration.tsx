@@ -39,17 +39,17 @@ const Registration = () => {
   };
 
   return (
-    <div className="h-screen relative grid grid-cols-2 px-16 pb-16">
-      <div className="absolute bg-gradient-to-b from-primary/20 to-white w-[500px] h-64 rounded-4xl top-16 right-32" />
+    <div className="xl:h-screen relative grid md:grid-cols-2 px-8 xl:px-16 pb-16 ">
+      <div className="absolute bg-gradient-to-b from-primary/20 to-white w-[500px] h-64 rounded-4xl top-16 right-32 hidden xl:flex" />
       <div className="mt-16 relative flex flex-col justify-between">
-        <h1 className="text-5xl leading-14">
+        <h1 className="text-2xl md:text-3xl xl:text-5xl xl:leading-14">
           Daftar Sekarang di Hospitality <br /> Education Institute
         </h1>
-        <form onSubmit={handleSubmit} className="flex flex-col justify-between gap-y-8">
-          <div className="grid grid-cols-2 gap-x-8">
+        <form onSubmit={handleSubmit} className="flex flex-col justify-between gap-y-8 w-full ">
+          <div className="mt-8 xl:mt-0 grid xl:grid-cols-2 gap-x-8">
             <div className="relative">
               <input
-                className="p-4 pl-12 rounded-xl border border-primary/40 shadow bg-lightgray w-full"
+                className="p-4 pl-12 rounded-xl border border-primary/40 shadow bg-lightgray xl:w-full"
                 type="text"
                 placeholder="Nama Depan"
                 value={form.foreName}
@@ -57,9 +57,9 @@ const Registration = () => {
               />
               <User className="absolute top-1/2 -translate-y-1/2 left-4 text-primary" weight="fill" />
             </div>
-            <div className="relative">
+            <div className="relative mt-8 xl:mt-0">
               <input
-                className="p-4 pl-12 rounded-xl border border-primary/40 bg-lightgray w-full shadow"
+                className="p-4 pl-12 rounded-xl border border-primary/40 bg-lightgray xl:w-full shadow"
                 type="text"
                 placeholder="Nama Belakang"
                 value={form.middleName}
@@ -70,7 +70,7 @@ const Registration = () => {
           </div>
           <div className="relative">
             <select
-              className="p-4 pl-12 rounded-xl border border-primary/40 bg-lightgray w-full shadow appearance-none"
+              className="p-4 pl-12 rounded-xl border border-primary/40 bg-lightgray xl:w-full shadow appearance-none"
               value={form.program}
               onChange={(e) => setForm({ ...form, program: e.target.value })}
             >
@@ -88,10 +88,10 @@ const Registration = () => {
               weight="fill"
             />
           </div>
-          <div className="grid grid-cols-2 gap-x-8">
+          <div className="grid xl:grid-cols-2 gap-x-8">
             <div className="relative">
               <input
-                className="p-4 pl-12 rounded-xl border border-primary/40 bg-lightgray w-full shadow"
+                className="p-4 pl-12 rounded-xl border border-primary/40 bg-lightgray xl:w-full shadow"
                 type="text"
                 placeholder="Whatsapp"
                 value={form.whatsapp}
@@ -99,9 +99,9 @@ const Registration = () => {
               />
               <WhatsappLogo className="absolute top-1/2 -translate-y-1/2 left-4 text-primary" weight="fill" />
             </div>
-            <div className="relative">
+            <div className="relative mt-8 xl:mt-0">
               <input
-                className="p-4 pl-12 rounded-xl border border-primary/40 bg-lightgray w-full shadow"
+                className="p-4 pl-12 rounded-xl border border-primary/40 bg-lightgray xl:w-full shadow"
                 type="email"
                 placeholder="Email"
                 value={form.email}
@@ -119,7 +119,7 @@ const Registration = () => {
             </button>
           </div>
         </form>
-        <div>
+        <div className='mt-8 xl:mt-0'>
           <Marquee>
             {logoData.map((item, i) => (
               <img key={i} className="mx-8 w-20 h-12 filter grayscale-[50%]" src={item.img} alt="" />
@@ -129,7 +129,7 @@ const Registration = () => {
       </div>
 
       <div
-        className="relative"
+        className="relative hidden md:flex"
         style={{ backgroundImage: `url(${HERO})`, backgroundSize: 'cover', backgroundPosition: 'top' }}
       >
         <div className="w-8 h-8 p-1 rounded-full bg-primary flex justify-center items-center text-white absolute top-16 right-0">

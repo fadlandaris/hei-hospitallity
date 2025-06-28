@@ -7,11 +7,11 @@ import { marqueeData } from "../data/data"
 const About = () => {
   return (
     <main id="about" className="py-16 mt-16  bg-gradient-to-b from-lightgray to-lightgray/50">
-      <div className="px-16">
-        <h1 className="text-5xl leading-14">Bridging the Gap <br />Between Artist and Fans</h1>
+      <div className="px-8 xl:px-16">
+        <h1 className="text-3xl xl:text-5xl xl:leading-14">Bridging the Gap <br />Between Student and Mentors</h1>
         <div className="mt-16">
-          <div className="w-full h-[80vh] relative bg-neutral-300 rounded-4xl">
-            <div className="p-8 w-[500px] h-72 flex flex-col justify-between rounded-2xl absolute right-32 -top-32 bg-white z-10 shadow">
+          <div className="w-full h-[80vh]  hidden md:flex relative bg-neutral-300 rounded-4xl">
+            <div className="p-8 w-[500px] hidden md:flex scale-50 lg:scale-75 xl:scale-100 h-72 xl:flex flex-col justify-between rounded-2xl absolute -top-32 -right-8 xl:right-32 xl:-top-32 bg-white z-10 shadow">
              <div className="flex justify-between">
               <h1 className="text-3xl">Offering a Uniqe <br /> and Unforgettable <br /> Experience.</h1>
               <div className="w-12 h-12 rounded-full border-2 border-dashed border-text/50 flex items-center justify-center">
@@ -31,11 +31,11 @@ const About = () => {
               <div className="px-4 py-2 bg-white inline-block rounded-full text-text text-sm">
                 Why Choose Us ?
               </div>
-              <div className="grid grid-cols-4 gap-x-10 mt-8">
+              <div className="grid grid-cols-2 xl:grid-cols-4 gap-x-10 mt-8 gap-y-4">
                 {whyUsData.map((item, i) => {
                   return (
                     <div key={i} className=" text-white">
-                      <h1 className="text-3xl tracking-wide font-medium">{item.title}</h1>
+                      <h1 className="text-2xl xl:text-3xl tracking-wide font-medium">{item.title}</h1>
                       <p className="mt-4">{item.desc}</p>
                     </div>
                   )
@@ -43,16 +43,16 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="mt-16 grid grid-cols-3 gap-x-16">
+          <div className="mt-16 grid md:grid-cols-2 xl:grid-cols-3 gap-y-16 md:gap-y-8 md:gap-x-16">
             {aboutData.map((item, i) => {
               return (
                 <div key={i} className="flex items-start gap-x-4">
                   <div className="text-3xl ">
                     <item.icon weight="fill"/>
                   </div>
-                  <div className="flex items-start gap-x-2 text-7xl">
+                  <div className="flex items-start gap-x-2 text-4xl md:text-7xl">
                     <h1>{item.value}</h1>
-                    <p className="text-3xl font-semibold">{item.subTitle}</p>
+                    <p className="text-xl md:text-3xl font-semibold">{item.subTitle}</p>
                   </div>
                   <p className="text-text">{item.title}</p>
                 </div>
