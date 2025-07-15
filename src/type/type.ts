@@ -10,4 +10,6 @@ export interface staticData {
     img?: string
     video?: string
     name? : string
+    focus? : string
+    subdesc? : string
 }

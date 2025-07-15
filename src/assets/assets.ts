@@ -1,6 +1,5 @@
 import LOGO from "./logo.png"
 import HERO from "./person-1.png"
-import ABOUT from "./about.jpeg"
 import ABOUT_1 from "./person-2.png"
 import PROGRAM from "./person-3.png"
 import PERSON_4 from "./person-4.png"
@@ -23,11 +22,14 @@ import LOGO_9 from "./logo9.png"
 import LOGO_10 from "./logo10.png"
 import LOGO_11 from "./logo11.png"
 import LOGO_12 from "./logo12.png"
+import PROGRAMS from "./progam.jpg"
+import BARISTA from "./barista.jpg"
+import CRUISE from "./cruise.jpg"
+import EXCLUSIVE from "./exclusive.jpg"
 
 export {
     LOGO,
     HERO,
-    ABOUT,
     ABOUT_1,
     PROGRAM,
     PERSON_4,
@@ -50,4 +52,8 @@ export {
     LOGO_7,
     LOGO_8,
     LOGO_9,
+    PROGRAMS,
+    BARISTA,
+    CRUISE,
+    EXCLUSIVE,
 }

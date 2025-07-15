@@ -1,6 +1,7 @@
 import type { staticData } from "../type/type"
-import { InstagramLogo, FacebookLogo, TiktokLogo, GraduationCap, Handshake, Globe, Coffee, PaintBrushHousehold, Hamburger, StarFour } from "phosphor-react"
-import { ABOUT_1, BARISTA_VIDEO, HERO, INTERNATIONAL_VIDEO, LOCAL_VIDEO, LOGO_1, LOGO_10, LOGO_11, LOGO_12, LOGO_2, LOGO_3, LOGO_4, LOGO_5, LOGO_6, LOGO_7, LOGO_8, LOGO_9, PERSON_4, PERSON_5, PROGRAM, TESTIMONY_AGUNG, TESTIMONY_RIZKI, TESTIMONY_SULTAN } from "../assets/assets"
+import { InstagramLogo, FacebookLogo, TiktokLogo, Coffee, PaintBrushHousehold, Hamburger, StarFour } from "phosphor-react"
+import { ABOUT_1, BARISTA_VIDEO, HERO, INTERNATIONAL_VIDEO, LOCAL_VIDEO, LOGO_1, LOGO_10, LOGO_11, LOGO_12, LOGO_2, LOGO_3, LOGO_4, LOGO_5, LOGO_6, LOGO_7, LOGO_8, LOGO_9, PERSON_4, PERSON_5, PROGRAM, PROGRAMS, TESTIMONY_AGUNG, TESTIMONY_RIZKI, TESTIMONY_SULTAN, BARISTA, CRUISE, EXCLUSIVE } from "../assets/assets"
+import { CalendarCheckIcon, BriefcaseIcon, BookOpenTextIcon } from "@phosphor-icons/react"
 
 export const navLinks: staticData[] = [
   {
@@ -15,11 +16,16 @@ export const navLinks: staticData[] = [
   },
   {
     id: 3,
+    nav: "Why us",
+    link: "whyus",
+  },
+   {
+    id: 4,
     nav: "Programs",
     link: "programs",
   },
   {
-    id: 4,
+    id: 5,
     nav: "Testimony",
     link: "testimony",
   },
@@ -41,56 +47,55 @@ export const socialMediaData: staticData[] = [
     icon: TiktokLogo,
     link: "https://www.tiktok.com/@hei.hospitality?_t=ZS-8xTYliYB5OL&_r=1"
   },
-
 ]
 
-
-export const aboutData: staticData[] = [
+export const serviceData = [
   {
     id: 1,
-    icon: GraduationCap,
-    title: "Sistem pendidikan dikemas untuk mendidik siswa / siswi sedemikian rupa sehingga menghasilkan 50+ lulusan yang kompeten",
-    value: "50",
-    subTitle: "+",
+    title : "Infrastruktur Valid",
+    desc: "infrastuktur yang valid dan",
+    subDesc: "didukung oleh mentor profesional",
+    icon: CalendarCheckIcon
   },
   {
     id: 2,
-    icon: Handshake,
-    title: "Kerja sama industri yang kami jalankan kurang lebih setidaknya terdapat 10 kerjasama dengan industri terkait ",
-    value: "10",
-    subTitle: "+",
+    title : "Penempatan Kerja",
+    desc: "Mendapatkan penempatan dan",
+    subDesc: "kesempatan bekerja diluar negeri ",
+    icon: BriefcaseIcon
   },
-   {
+  {
     id: 3,
-    icon: Globe,
-    title: "Sudah 5 tahun Sejak pendirian HEI yang sudah terkenal menghasilkan lulusan yang berkompeten di bidang hospitality ",
-    value: "5",
-    subTitle: "Thn",
+    title : "Kuliah Cepat Kerja",
+    desc: "Melakukan praktek kerja ",
+    subDesc: "langsung dan siap untuk bekerja ",
+    icon: BookOpenTextIcon
   },
 ]
 
-export const whyUsData: staticData[] = [
+export const experienceData = [
   {
     id: 1,
-    title: "Infrastruktur Valid",
-    desc: "infrastuktur yang valid dan didukung oleh mentor profesional"
+    title: "50+",
+    desc: "Lulusan luar negeri"
   },
-   {
+  {
     id: 2,
-    title: "Kuliah Untung",
-    desc: "Kuliah untung dengan biaya minim dan hasil maksimal "
+    title: "10+",
+    desc: "Kerja sama industri"
   },
-   {
-    id: 3,
-    title: "Penempatan Kerja",
-    desc: "Mendapatkan penempatan dan kesempatan bekerja diluar negeri "
+  {
+    id: 1,
+    title: "5Thn",
+    desc: "Sejak pendirian"
   },
-   {
-    id: 4,
-    title: "Kuliah Cepat Kerja",
-    desc: "Melakukan prakter kerja langsung dan siap untuk bekerja "
+  {
+    id: 1,
+    title: "4+",
+    desc: "Angkatan Lulusan"
   },
 ]
+
 
 export const marqueeData: staticData[] = [
   {
@@ -120,29 +125,37 @@ export const programData: staticData[] = [
     id: 1,
     title: "Hotel Exclusive (International)",
     icon: Coffee,
-    video : INTERNATIONAL_VIDEO,
-    desc: "Proses pembelajaran interaktif pendidikan teori & praktek selama 3 Bulan on the job training 6 bulan di Malaysia, Singapore, Turki. Full praktek english service, sertifikat pendidikan setara diploma, dan Mess selama pendidikan"
+    img: EXCLUSIVE,
+    desc: "Proses pembelajaran interaktif pendidikan teori & praktek selama 3 Bulan on the job training 6 bulan di Malaysia, Singapore, Turki. Full praktek english service, sertifikat pendidikan setara diploma, dan Mess selama pendidikan",
+    focus: "Fokus pembelajaran dan salah satu kelas utamanya adalah House Keeping",
+    subdesc: "pembelajaran terkait pelayanan hotel berbasis International",
   },
    {
     id: 2,
     icon: PaintBrushHousehold,
     title: "Hotel Intensive (Local)",
-    video : LOCAL_VIDEO,
-    desc: "Proses pembelajaran interaktif pendidikan teori & praktek selama 3 Bulan on the job training 6 bulan di Hotel bintang 4 dan 5 di indonesia. Full praktek english service, sertifikat pendidikan setara diploma, dan Mess selama pendidikan"
+    img: PROGRAMS,
+    desc: "Proses pembelajaran interaktif pendidikan teori & praktek selama 3 Bulan on the job training 6 bulan di Hotel bintang 4 dan 5 di indonesia. Full praktek english service, sertifikat pendidikan setara diploma, dan Mess selama pendidikan",
+    focus: "Fokus pembelajaran dan salah satu kelas utamanya adalah House Keeping",
+    subdesc: "pembelajaran terkait pelayanan hotel berbasis local dalam negeri",
   },
    {
     id: 3,
     icon: Hamburger,
     title: "Hotel Executive Cruise Ship",
-    video : INTERNATIONAL_VIDEO,
-    desc: "Proses pembelajaran interaktif pendidikan teori & praktek selama 2 Bulan dan memiliki pengalaman hotel minimal 6 bulan. Full praktek english for interview & hotel dibantu disalurkan ke agen kapal pesiar dan Mess selama pendidikan"
+    img: CRUISE,
+    desc: "Proses pembelajaran interaktif pendidikan teori & praktek selama 2 Bulan dan memiliki pengalaman hotel minimal 6 bulan. Full praktek english for interview & hotel dibantu disalurkan ke agen kapal pesiar dan Mess selama pendidikan",
+    focus: "Fokus pembelajran dan salah satu kelas utamanya adalah barista specalist",
+    subdesc: "pembelajaran terkait pelayanan kapal pesiar berbasis international",
   },
    {
     id: 4,
     icon: Hamburger,
     title: "Barista Specialist",
-    video : BARISTA_VIDEO,
-    desc: "Proses pembelajaran interaktif pendidikan teori & praktek selama 1 Bulan. Full praktek english for interview & hotel, sertifikat pelatihan, dan Mess selama pendidikan"
+    img: BARISTA,
+    desc: "Proses pembelajaran interaktif pendidikan teori & praktek terkait penyajian barista selama 1 Bulan penuh bimbingan. Full praktek english for interview & hotel, sertifikat pelatihan, dan Mess selama pendidikan",
+    focus: "Fokus pembelajaran dan salah satu kelas utamanya adalah barista specalist",
+    subdesc: "pembelajaran terkait pelayanan kapal pesiar berbasis international dan lokal",
   },
 ]
 
@@ -170,6 +183,30 @@ export const testimonyData: staticData[] = [
     desc: "Hei.. kalian anak-anak muda ayo mari jangan buang waktu kalian dirumah. langkahkan kaki kalian dan berjuang untuk masa depan. Pokoknya kalian tidak akan menyesal deh bergabung dengan HEI, saya buktinya HEI The hospitality champions",
     icon : StarFour,
     subTitle: "Waiter - Middle East",
+  },
+]
+
+export const galleryData = [
+  {
+    id: 1,
+    video : INTERNATIONAL_VIDEO,
+    title: "Food & Beverage",
+    date: "14.09.2023",
+    desc: "They had added 48 mationwide to their network"
+  },
+   {
+    id: 2,
+    video : LOCAL_VIDEO,
+    title: "House Keeping",
+    date: "14.09.2023",
+    desc: "They had added 48 mationwide to their network"
+  },
+   {
+    id: 3,
+    video : BARISTA_VIDEO,
+    title: "Barista",
+    date: "14.09.2023",
+    desc: "They had added 48 mationwide to their network"
   },
 ]
 
